@@ -1,0 +1,84 @@
+<div class="contenedor">
+    <form class="formulario">
+        <fieldset>
+            <legend>Registra tu horario de clase</legend>
+            <!--Boton de cambio de tema-->
+            <button (click)="toggleTheme()" class="btn btn-primary">Cambiar tema</button>
+            <!--Colocar correo y contraseña-->
+            <div>
+                <label for="exampleInputEmail1" class="form-label mt-4">Correo electronico:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Correo electronico">
+                <small id="emailHelp" class="form-text text-muted">No compartas este correo electronico</small>
+            </div>
+            <div>
+                <label for="exampleInputPassword1" class="form-label mt-4">Contraseña:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"
+                    autocomplete="off">
+            </div>
+            <!--Selección de materias-->
+            <fieldset>
+                <legend class="mt-4">Selecciona tus materias de este bimestre:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Organizaciones y recursos humanos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Mátematicas I
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Mátematicas discretas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Instrumentación electrónica y mediciones
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Introducción a las ciencias computacionales
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Fundamentos a la programación
+                    </label>
+                </div>
+            </fieldset>
+            <!--Seleccionar el grado en el que esta el alumno-->
+            <div>
+                <label for="exampleSelect1" class="form-label mt-4">Selecciona tu grado:</label>
+                <select class="form-select" id="exampleSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <!--Espacio donde el alumno pueda dejar algun comentario-->
+            <div>
+                <label for="exampleTextarea" class="form-label mt-4">Deja tu comentario:</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <!--Subir su foto de perfil-->
+            <div>
+                <label for="formFile" class="form-label mt-4">Selecciona tu foto de perfil:</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+        </fieldset>
+        <!--Boton de siguiente-->
+        <button type="submit" class="btn btn-primary">Siguiente</button>
+    </form>
+</div>

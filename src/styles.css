@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/*Modo claro (por defecto*/
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+/*Modo oscuro*/
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+/*Aplica las variables*/
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
